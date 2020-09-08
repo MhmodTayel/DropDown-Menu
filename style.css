@@ -11,6 +11,22 @@ body {
   color: #fff;
 }
 
+#navbar ul {
+  list-style: none;
+}
+
+#navbar ul li {
+  color: #fff;
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+}
+
+#navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
 #showcase {
   /* display: flex; */
   background: url(./img/wallpaper.jpg) no-repeat center center/cover;
@@ -27,4 +43,8 @@ body {
   height: 100vh;
   background: rgba(99, 110, 114,0.5);
 
+}
+
+h1 {
+  font-size: 3rem;
 }
