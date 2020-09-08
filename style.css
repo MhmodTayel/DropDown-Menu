@@ -71,14 +71,6 @@ body {
   background: #333;
 }
 
-
-
-
-
-
-
-
-
 #showcase {
   /* display: flex; */
   background: url(./img/wallpaper.jpg) no-repeat center center/cover;
@@ -99,4 +91,22 @@ body {
 
 h1 {
   font-size: 3rem;
+}
+
+@media(max-width:600px){
+  #navbar ul li {
+    display: block;
+  }
+  #navbar ul li:hover ul {
+    width: 100%;
+    position: relative;
+  }
+
+  #navbar ul li:hover {
+    background: #333;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
 }
