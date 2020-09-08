@@ -27,6 +27,58 @@ body {
   text-decoration: none;
 }
 
+/* Hide nested ul by default */
+#navbar ul li ul {
+  display: none;
+}
+
+#navbar ul li:hover {
+  cursor: pointer;
+  background: rgb(25, 117, 179);
+  color: #fff;
+}
+
+/* Nested dropdown show */
+#navbar ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  margin-top: 1rem;
+}
+
+#navbar ul li:hover ul li {
+  display: block;
+  background: #333;
+}
+
+#navbar ul li:hover ul li:hover {
+  cursor: pointer;
+  background: rgb(25, 117, 179);
+  color: #fff;
+}
+
+#navbar ul li:hover ul li span {
+  float: right;
+  background: rgb(25, 117, 179);
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+#navbar ul li:hover ul li:hover span {
+  background: #333;
+}
+
+
+
+
+
+
+
+
+
 #showcase {
   /* display: flex; */
   background: url(./img/wallpaper.jpg) no-repeat center center/cover;
